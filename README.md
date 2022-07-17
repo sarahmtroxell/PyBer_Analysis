@@ -23,11 +23,11 @@ Once I had my data in a single dataframe, I used the Pandas groupby() function w
 I created another new dataframe using the groupy() function and sum() method to return the total fare amount for each date in the dataset, then the pivot() function to set the index as the date. The final line plot should display the data by weeks, so I used the loc method to filter for the specified date range, then the resample() function to sum the fares by weeks instead of days. Using Matplotlib, I graphed the three city type's fares by week on the same chart using the object oriented method. Finally, I saved a PNG image of the multiple line chart to easily share my results.
 
 ## Results
-
-![Summary Table](../main/Resources/PyBer_Summary_Df.png)
-
-![Summary Graph](../main/Resources/PyBer_fare_summary.png)
-
+### Summary Table:
+![Summary Table](../main/analysis/PyBer_Summary_Df.png)
+### Multiple Line Chart:
+![Summary Graph](../main/analysis/PyBer_fare_summary.png)
+### Conclusions:
 1. Urban city types had the most rides when compared to rural and suburban types. This is likely due to the higher population of people without cars in cities, higher number of activities, and population density.
 2. Rural city types had a significantly lower number of drivers than suburban or urban types. Since there were less rides taken in rural areas, there may not be a high enough demand to hire additional drivers in rural areas. 
 3. The total fares for each city type fell in line with the same order ranking that the number of total rides and drivers did; from the least fares to the most fares was rural, suburban, and urban city types. 
@@ -36,7 +36,7 @@ I created another new dataframe using the groupy() function and sum() method to 
 6. The multiple line graph plots the Total Fare by City Type by week from March to May. All city types saw Total Fares peak near the end of February, which could be due to higher priced rides or a higher quantity of rides taken. Suburban and Urban city types both had more fluctation in Total Fares during the period than Rural city types (~$450 difference between high and low).
 
 ## Summary
-I believe the following recommendations address disparities among the city types: 
+The following business recommendations address PyBer disparities among the city types: 
 1. Urban city types have more total drivers than total rides, which means these areas are overemployed given the demand. You should stop hiring drivers in urban cities to ensure the employees are each given enough rides to make money.
 2. Rural city types have the lowest proportion of drivers to total rides and have the highest average fare per driver. You could incentivise urban drivers to make trips in rural areas by advertising data on how much more money they could make by working in the rural areas or by offerring incentives if they take a few rural trips each week. This would also address the oversaturation of drivers in urban areas. 
-3. 
+3. This report did not analyze the trip lengths. I would suggest using trip fare and trip length data to calculate the average cost per mile in each city type to determine if you could raise prices to be more profitable per trip in urban areas or if you could lower the cost per mile in rural citites to attract more customers. 
